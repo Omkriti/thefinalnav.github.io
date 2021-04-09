@@ -1,0 +1,138 @@
+body{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,curive;
+  background:  url("hero-bg.jpg");
+  background-position: left;
+  overflow-x : hidden;
+}
+
+
+.logo img{
+  padding-left: 30px;
+  padding-top: 20px;
+  width: 150px;
+  float: left;
+  height: auto;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar {
+  height: 100%;
+  position: absolute;
+  right: -260px;
+  width: 260px;
+  background-color: #000000;
+  text-align: center;
+  transition: 0.800s ease;
+
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid  rgba(255,255,255,0.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  right: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  right: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  right: 0vh;
+}
+#check:checked ~ label #btn{
+  right: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  right: 195px;
+}
+#check:checked ~ section{
+  margin-right: 250px;
+}
+section{
+  background-position:  center;
+  background-size: absolute;
+  height: 100vh;
+  transition: all .5s;
+}
+
+.social ul{
+  position: absolute;
+  top: 60%;
+  left:-20%;
+  margin-left: 55px;
+  padding: 0;
+  display: flex;
+}
+
+.social ul li{
+  list-style: none;
+  margin: 0px 5px;
+}
+
+.social ul li .fab{
+  font-size: 22px;
+  line-height: 30px;
+  transition: .6s;
+  color: #C0C0C0;
+  text-align: center;
+}
+.social ul li a{
+  position: center;
+  text-align: center;
+  transition: .6s;
+}
